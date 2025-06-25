@@ -1,0 +1,31 @@
+[user]
+	email = lewy@seiden.us
+	name = Lewis-Seiden
+
+[alias]
+	a = add
+	amend = commit --amend
+	b = branch
+	c = commit -v
+	cm = commit -vm
+	cam = commit -vam
+	co = checkout
+	nb = co -b
+	d = diff
+	f = fetch
+	g = grep
+	p = pull
+	pu = push
+	rb = rebase
+	rs = reset
+	s = status
+	sh = show
+	st = stash
+	sw = switch
+	l = log
+	h = help
+	m = merge
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+
+[init]
+	defaultBranch = main
