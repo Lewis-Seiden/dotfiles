@@ -36,7 +36,6 @@ alias poke="/home/lseiden/Documents/personal/emerald-emulator/mGBA-0.10.4-appima
 alias reefSim=""
 alias restartKDE="kquitapp5 plasmashell
 kstart5 plasmashell"
-echo 'export TERM=xterm-256color' >> $HOME/.bash_profile
 alias gcam="git cam"
 alias crun="cargo run"
 
