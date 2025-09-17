@@ -9,8 +9,15 @@
     "margin-left": 8,
     // Choose the order of the modules
     "modules-left": [
+        "power-profiles-daemon",
+        "cpu",
+        "memory",
+        "temperature",
+	"niri/window"
     ],
     "modules-center": [
+      "custom/search",
+      "custom/virtual_keyboard"
     ],
     "modules-right": [
         "network",
@@ -18,6 +25,42 @@
         "pulseaudio",
     	"clock"
     ],
+    "niri/window": {
+    	"format": "<span>    {title}</span>",
+    	"rewrite": {
+    	}
+    },
+    "power-profiles-daemon": {
+        "format": "{icon}",
+        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+            "default": "",
+            "performance": "",
+            "balanced": "",
+            "power-saver": ""
+        }
+    },
+    "cpu": {
+        "format": "󰘚 {usage}%",
+        "tooltip": true,
+        "interval": 1,
+        "on-click": "kitty -e htop"
+    },
+    "memory": {
+        "format": "󰍛 {}%",
+        "interval": 1,
+        "on-click": "kitty -e htop"
+    },
+    "temperature": {
+        "critical-threshold": 80,
+        "format": "{icon} {temperatureC}°C",
+        "format-icons": [
+            "󱃃",
+            "󰔏",
+            "󱃂"
+        ],
+    },
     "clock": {
       "format": "󰅐  {:%H:%M}",
       "tooltip": false
@@ -59,5 +102,15 @@
         "󱊢",
         "󱊣"
       ]
+    },
+    "custom/virtual_keyboard": {
+        "format": " ",
+        "tooltip-format": "Virtual keyboard",
+        "on-click": "sh ~/.config/waybar/control_wvkbd.sh"
+    },
+    "custom/search": {
+      "format": " ",
+      "tooltip-format": "Open Fuzzel",
+      "on-click": "fuzzel"
     }
 } 

@@ -23,6 +23,11 @@ window#waybar {
 #custom-applauncher,
 #tray,
 #workspaces,
+#cpu,
+#memory,
+#temperature,
+#power-profiles-daemon,
+#window,
 #pulseaudio {
   margin: 6px;
   margin-right: 0px;
@@ -36,6 +41,10 @@ window#waybar {
 
 #clock {
   margin-right: 12px;
+}
+
+#power-profiles-daemon {
+  margin-left: 12px;
 }
 
 #battery {
