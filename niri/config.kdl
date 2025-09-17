@@ -109,6 +109,11 @@ output "eDP-1" {
     position x=0 y=0
 }
 
+switch-events {
+    tablet-mode-on  { spawn "sh" "-c" "~/.config/waybar/control_wvkbd.sh SIGUSR2"; }
+    tablet-mode-off { spawn "sh" "-c" "~/.config/waybar/control_wvkbd.sh SIGUSR1"; }
+}
+
 // Settings that influence how windows are positioned and sized.
 // Find more information on the wiki:
 // https://yalter.github.io/niri/Configuration:-Layout
@@ -273,6 +278,7 @@ layout {
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "waybar"
+spawn-sh-at-startup "~/.config/niri/auto_rotate_display.sh"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"

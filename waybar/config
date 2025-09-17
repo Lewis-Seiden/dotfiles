@@ -20,9 +20,10 @@
       "custom/virtual_keyboard"
     ],
     "modules-right": [
-        "network",
         "battery",
+	"backlight",
         "pulseaudio",
+        "network",
     	"clock"
     ],
     "niri/window": {
@@ -64,6 +65,11 @@
     "clock": {
       "format": "󰅐  {:%H:%M}",
       "tooltip": false
+    },
+    "backlight": {
+        // "device": "acpi_video1",
+        "format": "{percent}% {icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "network": {
       "format-wifi": "   {bandwidthDownBits}",
