@@ -276,8 +276,6 @@ layout {
 // which may be more convenient to use.
 // See the binds section below for more spawn examples.
 
-// This line starts waybar, a commonly used bar for Wayland compositors.
-spawn-at-startup "waybar"
 spawn-sh-at-startup "~/.config/niri/auto_rotate_display.sh"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:

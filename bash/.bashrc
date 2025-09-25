@@ -28,6 +28,8 @@ alias c="code ."
 alias crun="cargo run"
 alias ll="ls -l"
 alias la="ls -la"
+# stolen from stack overflow
+alias tr="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'"
 
 # Converts LaTeX to Unicode, prints the result, and copies it to the clipboard
 uc() {
