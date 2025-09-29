@@ -49,5 +49,7 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
-cbonsai -p --leaf="&","@"
+# cbonsai -p --leaf="&","@"
 
+
+. "$HOME/.local/share/../bin/env"
