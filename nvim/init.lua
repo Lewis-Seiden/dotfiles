@@ -20,8 +20,12 @@ vim.opt.rtp:prepend(lazypath)
 -- This is also a good place to setup other settings (vim.opt)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
+
+vim.opt.expandtab = true
+vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
-vim.opt.smarttab = true
+vim.opt.softtabstop = 4
+
 vim.opt.relativenumber = true
 
 -- Setup lazy.nvim
@@ -50,6 +54,20 @@ require("lazy").setup({
 	    },
 	
     },
+    {
+        "iamcco/markdown-preview.nvim",
+        cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+        ft = { "markdown" },
+        build = function() 
+            vim.fn["mkdp#util#install"]()
+        end,
+    },
+    {
+        'chomosuke/typst-preview.nvim',
+        lazy = false, -- or ft = 'typst'
+        version = '1.*',
+        opts = {}, -- lazy.nvim will implicitly calls `setup {}`
+    },
     { "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
   },
   -- Configure any other settings here. See the documentation for more details.
@@ -63,4 +81,3 @@ vim.cmd [[colorscheme moonfly]]
 -- Lua initialization file
 vim.g.moonflyTransparent = true
 vim.g.moonflyUnderlineMatchParen = true
-

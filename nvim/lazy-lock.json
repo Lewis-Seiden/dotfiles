@@ -1,9 +1,11 @@
 {
-  "lazy.nvim": { "branch": "main", "commit": "f0f5bbb9e5bfae5e6468f9359ffea3d151418176" },
-  "mini.nvim": { "branch": "main", "commit": "ee4a4a4abed25e3d108d985b0553c5271f2f71aa" },
-  "moonfly": { "branch": "master", "commit": "ef85b89739bee184e204c89bc06280d62bd84039" },
-  "nvim-treesitter": { "branch": "master", "commit": "42fc28ba918343ebfd5565147a42a26580579482" },
-  "render-markdown.nvim": { "branch": "main", "commit": "10126effbafb74541b69219711dfb2c631e7ebf8" },
-  "transparent.nvim": { "branch": "main", "commit": "8ac59883de84e9cd1850ea25cf087031c5ba7d54" },
-  "tree-sitter-latex": { "branch": "master", "commit": "7e0ecdc02926c7b9b2e0c76003d4fe7b0944f957" }
+  "lazy.nvim": { "branch": "main", "commit": "306a05526ada86a7b30af95c5cc81ffba93fef97" },
+  "markdown-preview.nvim": { "branch": "master", "commit": "a923f5fc5ba36a3b17e289dc35dc17f66d0548ee" },
+  "mini.nvim": { "branch": "main", "commit": "7ed410c73ebb910754c2938a6dae50c51c3a096a" },
+  "moonfly": { "branch": "master", "commit": "261664f92ed51cf0c077555b2d4b2530307eac17" },
+  "nvim-treesitter": { "branch": "master", "commit": "cf12346a3414fa1b06af75c79faebe7f76df080a" },
+  "render-markdown.nvim": { "branch": "main", "commit": "5adf0895310c1904e5abfaad40a2baad7fe44a07" },
+  "transparent.nvim": { "branch": "main", "commit": "e00ca1cf09caef575edf8da7e5a8b9193893b4c7" },
+  "tree-sitter-latex": { "branch": "master", "commit": "7e0ecdc02926c7b9b2e0c76003d4fe7b0944f957" },
+  "typst-preview.nvim": { "branch": "master", "commit": "325036ee145ca51d9efb145c09ac16bce3bc8b7d" }
 }

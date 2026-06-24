@@ -31,6 +31,7 @@ alias la="ls -la"
 # stolen from stack overflow
 alias tr="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'"
 alias auto-rotate="sh ~/.config/niri/auto_rotate_display.sh"
+alias suspend="systemctl suspend"
 
 # Converts LaTeX to Unicode, prints the result, and copies it to the clipboard
 uc() {
@@ -50,7 +51,7 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
+export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
 # cbonsai -p --leaf="&","@"
-
 
 . "$HOME/.local/share/../bin/env"

@@ -13,11 +13,12 @@
         "cpu",
         "memory",
         "temperature",
-	"niri/window"
+	    "niri/window"
     ],
     "modules-center": [
       "custom/search",
-      "custom/virtual_keyboard"
+      "custom/virtual_keyboard",
+      "custom/overview"
     ],
     "modules-right": [
         "battery",
@@ -110,7 +111,7 @@
       ]
     },
     "custom/virtual_keyboard": {
-        "format": " ",
+        "format": "  ",
         "tooltip-format": "Virtual keyboard",
         "on-click": "sh ~/.config/waybar/control_wvkbd.sh"
     },
@@ -118,5 +119,10 @@
       "format": " ",
       "tooltip-format": "Open Fuzzel",
       "on-click": "fuzzel"
+    },
+    "custom/overview": {
+      "format": " ",
+      "tooltip-format": "Open Overview",
+      "on-click": "niri msg action toggle-overview"
     }
 } 

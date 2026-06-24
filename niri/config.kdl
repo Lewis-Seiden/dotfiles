@@ -19,6 +19,7 @@ input {
             // If this section is empty, niri will fetch xkb settings
             // from org.freedesktop.locale1. You can control these using
             // localectl set-x11-keymap.
+            options "caps:escape,escape:swapcaps"
         }
 
         // Enable numlock on startup, omitting this setting disables it.
@@ -45,10 +46,11 @@ input {
 
     mouse {
         // off
-        natural-scroll
+        // natural-scroll
         // accel-speed 0.2
         // accel-profile "flat"
         // scroll-method "no-scroll"
+	middle-emulation
     }
 
     trackpoint {
@@ -107,6 +109,10 @@ output "eDP-1" {
     // If the position is unset or results in an overlap, the output is instead placed
     // automatically.
     position x=0 y=0
+}
+
+output "Samsung Electric Company SMS27A850 H1AK500000" {
+    position x=1280 y=-500
 }
 
 switch-events {
@@ -539,7 +545,7 @@ binds {
     // Mod+Ctrl+1 { move-window-to-workspace 1; }
 
     // Switches focus between the current and the previous workspace.
-    // Mod+Tab { focus-workspace-previous; }
+    Mod+Tab { focus-workspace-previous; }
 
     // The following binds move the focused window in and out of a column.
     // If the window is alone, they will consume it into the nearby column to the side.
