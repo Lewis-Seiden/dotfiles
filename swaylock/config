@@ -1,0 +1,27 @@
+image=~/Documents/background.jpg
+font="Maple Mono"
+indicator-idle-visible
+indicator-radius=64
+
+ring-color=46E2A4
+
+inside-caps-lock-color=F0F2A688
+ring-caps-lock-color=F0F2A6
+text-caps-lock-color=F0F2A6
+
+inside-wrong-color=E92B7788
+
+ring-ver-color=46E2A4
+inside-ver-color=46E2A488
+
+inside-clear-color=F0F2A688
+ring-clear-color=F0F2A6
+
+text-color=1A1B25
+text-wrong-color=1A1B25
+text-clear-color=1A1B25
+text-caps-lock-color=F0F2A6
+text-ver-color=1A1B25
+
+key-hl-color=E92B77
+
